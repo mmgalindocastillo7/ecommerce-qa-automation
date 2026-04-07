@@ -1,115 +1,77 @@
 # 🧪 Ecommerce QA Automation - Playwright
 
-Proyecto de automatización de pruebas end-to-end para un flujo de comercio electrónico utilizando **Playwright** y buenas prácticas de QA Automation.
+![Playwright Tests](https://github.com/mmgalindocastillo7/ecommerce-qa-automation/actions/workflows/playwright.yml/badge.svg)
 
 ---
 
-## 🚀 Tecnologías utilizadas
+## 🚀 Descripción
+
+Proyecto de automatización E2E para un flujo completo de ecommerce usando Playwright, aplicando buenas prácticas de QA Automation como Page Object Model y ejecución en CI/CD.
+
+---
+
+## 🧪 Flujo automatizado
+
+✔ Login de usuario
+✔ Selección de producto
+✔ Agregar al carrito
+✔ Proceso de checkout
+✔ Validación de compra exitosa
+
+---
+
+## 🧱 Arquitectura
+
+* Page Object Model (POM)
+* Separación de lógica de negocio y tests
+* Selectores estables
+* Código reutilizable
+
+---
+
+## ⚙️ Tecnologías
 
 * Playwright
 * JavaScript
 * Node.js
-* GitHub Actions (CI/CD)
+* GitHub Actions
 
 ---
 
-## 📌 Objetivo del proyecto
+## ▶️ Ejecución
 
-Validar el flujo principal de un ecommerce:
-
-* Login de usuario
-* Navegación de productos
-* Validación de inventario
-* Flujo de compra (en progreso)
-
----
-
-## 🧱 Estructura del proyecto
-
-```
-ecommerce-qa-automation/
-│
-├── pages/               # Page Object Model
-│   ├── loginPage.js
-│   ├── inventoryPage.js
-│   └── cartPage.js
-│
-├── tests/
-│   └── ui/
-│       ├── login.spec.js
-│
-├── playwright-report/   # Reportes de ejecución
-├── test-results/
-├── package.json
-└── README.md
-```
-
----
-
-## ▶️ Ejecución de pruebas
-
-Instalar dependencias:
-
-```
+```bash
 npm install
-```
-
-Ejecutar pruebas:
-
-```
 npx playwright test
 ```
-
-Ver reporte:
-
-```
-npx playwright show-report
-```
-
----
-
-## ⚙️ Integración continua (CI/CD)
-
-Este proyecto usa GitHub Actions para:
-
-* Instalar dependencias
-* Ejecutar pruebas automáticamente
-* Generar reportes
-
-Cada push a la rama `main` dispara la ejecución automática.
 
 ---
 
 ## 📊 Reportes
 
-Los reportes se generan automáticamente en cada ejecución y pueden descargarse desde:
+Los reportes se generan automáticamente y pueden visualizarse con:
 
-👉 GitHub Actions → Artifacts
-
----
-
-## 🧠 Buenas prácticas implementadas
-
-* Page Object Model (POM)
-* Separación de lógica de pruebas
-* Uso de selectores estables
-* Automatización en CI/CD
+```bash
+npx playwright show-report
+```
 
 ---
 
-## 📈 Próximas mejoras
+## 💡 Lo que demuestra este proyecto
 
-* Flujo completo de compra (checkout)
-* Pruebas API
-* Manejo de datos dinámicos
-* Integración con reportes avanzados (Allure)
+* Automatización E2E real
+* Manejo de flujos completos de usuario
+* Implementación de POM
+* Integración con CI/CD
+* Resolución de errores en entornos reales
 
 ---
 
 ## 👩‍💻 Autor
 
-**Merce Galindo**
+Maria Mercedes Galindo Castillo
 QA Automation | Full Stack Developer
+
 
 ---
 
